@@ -10,6 +10,8 @@ import UIKit
 class FXListViewController: UIViewController {
     var presenter: FXListViewToPresenterProtocol?
 
+    @IBOutlet weak var fxCategoryTableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.fetchList()
@@ -18,11 +20,32 @@ class FXListViewController: UIViewController {
 
 // MARK: - FXListPresenterToView
 extension FXListViewController: FXListPresenterToViewProtocol {
-    func didFetch(fx data: FX) {
-        print("response", data)
+    func reloadUI() {
+        fxCategoryTableView.reloadData()
     }
     
-    func didFail(_ message: String) {
-        print("error", message)
+    func showFailed(_ message: String) {
+        print("Error", message)
     }
+}
+
+// MARK: TableViewDelegate
+extension FXListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        110
+    }
+}
+
+// MARK: TableViewDataSource
+extension FXListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        presenter?.numberOfRows(Insection: section) ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: FXCategoryTableViewCell.identifier, for: indexPath) as! FXCategoryTableViewCell
+        cell.fxNews = presenter?.item(for: indexPath) ?? []
+        return cell
+    }
+
 }

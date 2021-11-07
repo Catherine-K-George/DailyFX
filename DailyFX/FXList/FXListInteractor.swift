@@ -14,9 +14,13 @@ class FXListInteractor: NSObject {
         ServiceHandler.makeRequest(responseType: FX.self) { [weak self] (result) in
             switch result {
             case .success(let fxNews):
-                self?.presenter?.didFetch(fx: fxNews)
+                DispatchQueue.main.async {
+                    self?.presenter?.didFetch(fx: fxNews)
+                }
             case .failure(let error):
-                self?.presenter?.didFail(error.localizedDescription)
+                DispatchQueue.main.async {
+                    self?.presenter?.didFail(error.localizedDescription)
+                }
             }
         }
     }

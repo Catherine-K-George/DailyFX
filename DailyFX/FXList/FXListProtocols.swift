@@ -10,11 +10,14 @@ import Foundation
 
 protocol FXListViewToPresenterProtocol {
     func fetchList()
+    func numberOfSections() -> Int
+    func numberOfRows(Insection section: Int) -> Int
+    func item(for indexPath: IndexPath) -> [FXNews]
 }
 
 protocol FXListPresenterToViewProtocol: AnyObject {
-    func didFetch(fx data: FX)
-    func didFail(_ message: String)
+    func reloadUI()
+    func showFailed(_ message: String)
 }
 
 protocol FXListPresenterToInteractorProtocol {
