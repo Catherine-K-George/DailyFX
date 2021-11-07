@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		C114219C2738170C00DF0F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114219B2738170C00DF0F50 /* AppDelegate.swift */; };
 		C114219E2738170C00DF0F50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114219D2738170C00DF0F50 /* SceneDelegate.swift */; };
-		C11421A02738170C00DF0F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114219F2738170C00DF0F50 /* ViewController.swift */; };
-		C11421A32738170C00DF0F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11421A12738170C00DF0F50 /* Main.storyboard */; };
+		C11421A02738170C00DF0F50 /* FXListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114219F2738170C00DF0F50 /* FXListViewController.swift */; };
 		C11421A52738170E00DF0F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11421A42738170E00DF0F50 /* Assets.xcassets */; };
 		C11421A82738170E00DF0F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11421A62738170E00DF0F50 /* LaunchScreen.storyboard */; };
 		C11421B32738170F00DF0F50 /* DailyFXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421B22738170F00DF0F50 /* DailyFXTests.swift */; };
 		C11421BE2738170F00DF0F50 /* DailyFXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421BD2738170F00DF0F50 /* DailyFXUITests.swift */; };
+		C11421DA273819A000DF0F50 /* FXListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421D9273819A000DF0F50 /* FXListRouter.swift */; };
+		C11421DF273819AF00DF0F50 /* FXListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421DE273819AF00DF0F50 /* FXListInteractor.swift */; };
+		C11421E4273819BE00DF0F50 /* FXListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421E3273819BE00DF0F50 /* FXListPresenter.swift */; };
+		C11421E927381A6100DF0F50 /* FXListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421E827381A6100DF0F50 /* FXListProtocols.swift */; };
+		C11421F427381D2A00DF0F50 /* FXList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11421F327381D2A00DF0F50 /* FXList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +42,7 @@
 		C11421982738170C00DF0F50 /* DailyFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyFX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C114219B2738170C00DF0F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C114219D2738170C00DF0F50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C114219F2738170C00DF0F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C11421A22738170C00DF0F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C114219F2738170C00DF0F50 /* FXListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListViewController.swift; sourceTree = "<group>"; };
 		C11421A42738170E00DF0F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C11421A72738170E00DF0F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C11421A92738170E00DF0F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		C11421B92738170F00DF0F50 /* DailyFXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11421BD2738170F00DF0F50 /* DailyFXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXUITests.swift; sourceTree = "<group>"; };
 		C11421BF2738170F00DF0F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11421D9273819A000DF0F50 /* FXListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListRouter.swift; sourceTree = "<group>"; };
+		C11421DE273819AF00DF0F50 /* FXListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListInteractor.swift; sourceTree = "<group>"; };
+		C11421E3273819BE00DF0F50 /* FXListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListPresenter.swift; sourceTree = "<group>"; };
+		C11421E827381A6100DF0F50 /* FXListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListProtocols.swift; sourceTree = "<group>"; };
+		C11421F327381D2A00DF0F50 /* FXList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FXList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +107,9 @@
 		C114219A2738170C00DF0F50 /* DailyFX */ = {
 			isa = PBXGroup;
 			children = (
-				C114219B2738170C00DF0F50 /* AppDelegate.swift */,
-				C114219D2738170C00DF0F50 /* SceneDelegate.swift */,
-				C114219F2738170C00DF0F50 /* ViewController.swift */,
-				C11421A12738170C00DF0F50 /* Main.storyboard */,
-				C11421A42738170E00DF0F50 /* Assets.xcassets */,
-				C11421A62738170E00DF0F50 /* LaunchScreen.storyboard */,
+				C11421FB27381EE100DF0F50 /* Application */,
+				C11421D52738197000DF0F50 /* FXList */,
+				C114220027381F1B00DF0F50 /* Resources */,
 				C11421A92738170E00DF0F50 /* Info.plist */,
 			);
 			path = DailyFX;
@@ -126,6 +131,37 @@
 				C11421BF2738170F00DF0F50 /* Info.plist */,
 			);
 			path = DailyFXUITests;
+			sourceTree = "<group>";
+		};
+		C11421D52738197000DF0F50 /* FXList */ = {
+			isa = PBXGroup;
+			children = (
+				C114219F2738170C00DF0F50 /* FXListViewController.swift */,
+				C11421DE273819AF00DF0F50 /* FXListInteractor.swift */,
+				C11421E3273819BE00DF0F50 /* FXListPresenter.swift */,
+				C11421D9273819A000DF0F50 /* FXListRouter.swift */,
+				C11421E827381A6100DF0F50 /* FXListProtocols.swift */,
+				C11421F327381D2A00DF0F50 /* FXList.storyboard */,
+			);
+			path = FXList;
+			sourceTree = "<group>";
+		};
+		C11421FB27381EE100DF0F50 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C114219B2738170C00DF0F50 /* AppDelegate.swift */,
+				C114219D2738170C00DF0F50 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C114220027381F1B00DF0F50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C11421A42738170E00DF0F50 /* Assets.xcassets */,
+				C11421A62738170E00DF0F50 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C11421A82738170E00DF0F50 /* LaunchScreen.storyboard in Resources */,
+				C11421F427381D2A00DF0F50 /* FXList.storyboard in Resources */,
 				C11421A52738170E00DF0F50 /* Assets.xcassets in Resources */,
-				C11421A32738170C00DF0F50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C11421A02738170C00DF0F50 /* ViewController.swift in Sources */,
+				C11421E927381A6100DF0F50 /* FXListProtocols.swift in Sources */,
+				C11421DA273819A000DF0F50 /* FXListRouter.swift in Sources */,
+				C11421A02738170C00DF0F50 /* FXListViewController.swift in Sources */,
+				C11421E4273819BE00DF0F50 /* FXListPresenter.swift in Sources */,
 				C114219C2738170C00DF0F50 /* AppDelegate.swift in Sources */,
 				C114219E2738170C00DF0F50 /* SceneDelegate.swift in Sources */,
+				C11421DF273819AF00DF0F50 /* FXListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +336,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C11421A12738170C00DF0F50 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C11421A22738170C00DF0F50 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C11421A62738170E00DF0F50 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
