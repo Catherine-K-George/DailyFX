@@ -13,6 +13,21 @@ class FXListPresenter: NSObject {
     var router: FXListPresenterToRouterProtocol?
 }
 
-extension FXListPresenter: FXListViewToPresenterProtocol { }
+// MARK: - FXListViewToPresenter
+extension FXListPresenter: FXListViewToPresenterProtocol {
+    func fetchList() {
+        interactor?.fetchList()
+    }
+}
 
-extension FXListPresenter: FXListInteractorToPresenterProtocol { }
+// MARK: - FXListInteractorToPresenter
+extension FXListPresenter: FXListInteractorToPresenterProtocol {
+    func didFetch(fx data: FX) {
+        view?.didFetch(fx: data)
+    }
+
+    
+    func didFail(_ message: String) {
+        view?.didFail(message)
+    }
+}

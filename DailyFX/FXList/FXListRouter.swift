@@ -9,11 +9,11 @@ import UIKit
 
 class FXListRouter: NSObject {
     weak var presentedViewController: UIViewController?
-    static let viewIdentifier = "FXList"
+    static let viewIdentifier = StoryboardIdentifier.FXList
     weak var presenter: FXListPresenter?
 
     static func createModule() -> FXListViewController? {
-        let view = UIStoryboard(name: "FXList", bundle: nil).instantiateViewController(withIdentifier: viewIdentifier) as? FXListViewController
+        let view = UIStoryboard(name: StoryboardIdentifier.FXList, bundle: nil).instantiateViewController(withIdentifier: viewIdentifier) as? FXListViewController
 
         let presenter = FXListPresenter()
         view?.presenter = presenter
@@ -31,4 +31,5 @@ class FXListRouter: NSObject {
     }
 }
 
+// MARK: - FXListPresenterToRouter
 extension FXListRouter: FXListPresenterToRouterProtocol { }

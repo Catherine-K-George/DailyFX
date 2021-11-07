@@ -12,8 +12,17 @@ class FXListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.fetchList()
     }
 }
 
-
-extension FXListViewController: FXListPresenterToViewProtocol { }
+// MARK: - FXListPresenterToView
+extension FXListViewController: FXListPresenterToViewProtocol {
+    func didFetch(fx data: FX) {
+        print("response", data)
+    }
+    
+    func didFail(_ message: String) {
+        print("error", message)
+    }
+}

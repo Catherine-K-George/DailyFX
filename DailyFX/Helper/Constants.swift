@@ -10,3 +10,7 @@ import Foundation
 struct API {
     static let url = "https://content.dailyfx.com/api/v1/dashboard"
 }
+
+struct StoryboardIdentifier {
+    static let FXList = "FXList"
+}

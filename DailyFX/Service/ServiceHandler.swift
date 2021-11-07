@@ -26,11 +26,14 @@ class ServiceHandler {
                 completion(.failure(NetworkError.invalidData))
                 return
             }
-            guard let parsedData = try? JSONDecoder().decode(T.self, from: data) else {
-                completion(.failure(NetworkError.parseError))
-                return
+            do {
+                let parsedData = try JSONDecoder().decode(T.self, from: data)
+                completion(.success(parsedData))
+                
+            } catch(let error) {
+                completion(.failure(error))
             }
-            completion(.success(parsedData))
+            
         }
         task.resume()
     }

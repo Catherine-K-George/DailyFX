@@ -9,24 +9,21 @@ import Foundation
 
 
 protocol FXListViewToPresenterProtocol {
-//    func search(repositoryBy username: String)
-//    func navigateToDetail(_ repository: Repository)
+    func fetchList()
 }
 
 protocol FXListPresenterToViewProtocol: AnyObject {
-//    func didRepositorySearchFinish(with results: [Repository])
-//    func didFail(_ message: String)
+    func didFetch(fx data: FX)
+    func didFail(_ message: String)
 }
 
 protocol FXListPresenterToInteractorProtocol {
-//    func requestSearch(repositoryBy username: String)
+    func fetchList()
 }
 
 protocol FXListInteractorToPresenterProtocol: class {
-//    func didRepositorySearchFinish(with results: [Repository])
-//    func didFail(_ message: String)
+    func didFetch(fx data: FX)
+    func didFail(_ message: String)
 }
 
-protocol FXListPresenterToRouterProtocol {
-//    func navigateToDetails(_ repository: Repository)
-}
+protocol FXListPresenterToRouterProtocol { }
