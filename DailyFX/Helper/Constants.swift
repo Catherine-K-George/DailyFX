@@ -13,4 +13,5 @@ struct API {
 
 struct StoryboardIdentifier {
     static let FXList = "FXList"
+    static let FXDetail = "FXNewsDetail"
 }

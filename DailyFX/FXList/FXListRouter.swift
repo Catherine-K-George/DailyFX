@@ -32,4 +32,9 @@ class FXListRouter: NSObject {
 }
 
 // MARK: - FXListPresenterToRouter
-extension FXListRouter: FXListPresenterToRouterProtocol { }
+extension FXListRouter: FXListPresenterToRouterProtocol {
+    func navigateToFXDetail(_ news: FXNews) {
+        guard let detailVC = FXNewsDetailRouter.createModule(with: news) else { return }
+        presentedViewController?.navigationController?.pushViewController(detailVC, animated: true)
+    }
+}

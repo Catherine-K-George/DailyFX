@@ -11,7 +11,7 @@ class FXCategoryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
+        
     static let identifier = "FXCategoryCollectionViewCell"
 
     var fxNewsItem: FXNews? {

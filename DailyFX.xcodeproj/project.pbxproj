@@ -25,6 +25,12 @@
 		C114223527382D5700DF0F50 /* FX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114223427382D5700DF0F50 /* FX.swift */; };
 		C114223E27383A5F00DF0F50 /* FXCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114223D27383A5F00DF0F50 /* FXCategoryTableViewCell.swift */; };
 		C114224627383B3500DF0F50 /* FXCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114224527383B3500DF0F50 /* FXCategoryCollectionViewCell.swift */; };
+		C11422522738485F00DF0F50 /* FXNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11422512738485F00DF0F50 /* FXNewsDetailViewController.swift */; };
+		C11422572738489D00DF0F50 /* FXNewsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11422562738489D00DF0F50 /* FXNewsDetailInteractor.swift */; };
+		C114225C273848CE00DF0F50 /* FXNewsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114225B273848CE00DF0F50 /* FXNewsDetailPresenter.swift */; };
+		C11422642738490500DF0F50 /* FXNewsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11422632738490500DF0F50 /* FXNewsDetailRouter.swift */; };
+		C11422692738493200DF0F50 /* FXNewsDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11422682738493200DF0F50 /* FXNewsDetailProtocols.swift */; };
+		C114226E27384FE900DF0F50 /* FXNewsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C114226D27384FE900DF0F50 /* FXNewsDetail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +75,12 @@
 		C114223427382D5700DF0F50 /* FX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FX.swift; sourceTree = "<group>"; };
 		C114223D27383A5F00DF0F50 /* FXCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		C114224527383B3500DF0F50 /* FXCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		C11422512738485F00DF0F50 /* FXNewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXNewsDetailViewController.swift; sourceTree = "<group>"; };
+		C11422562738489D00DF0F50 /* FXNewsDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXNewsDetailInteractor.swift; sourceTree = "<group>"; };
+		C114225B273848CE00DF0F50 /* FXNewsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXNewsDetailPresenter.swift; sourceTree = "<group>"; };
+		C11422632738490500DF0F50 /* FXNewsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXNewsDetailRouter.swift; sourceTree = "<group>"; };
+		C11422682738493200DF0F50 /* FXNewsDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXNewsDetailProtocols.swift; sourceTree = "<group>"; };
+		C114226D27384FE900DF0F50 /* FXNewsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FXNewsDetail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,7 @@
 			children = (
 				C11421FB27381EE100DF0F50 /* Application */,
 				C11421D52738197000DF0F50 /* FXList */,
+				C114224D2738444D00DF0F50 /* FXDetail */,
 				C114223327382D4100DF0F50 /* Entities */,
 				C114221B273825AF00DF0F50 /* Service */,
 				C11422252738299700DF0F50 /* Helper */,
@@ -212,6 +225,19 @@
 				C114224527383B3500DF0F50 /* FXCategoryCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C114224D2738444D00DF0F50 /* FXDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C11422512738485F00DF0F50 /* FXNewsDetailViewController.swift */,
+				C11422562738489D00DF0F50 /* FXNewsDetailInteractor.swift */,
+				C114225B273848CE00DF0F50 /* FXNewsDetailPresenter.swift */,
+				C11422632738490500DF0F50 /* FXNewsDetailRouter.swift */,
+				C11422682738493200DF0F50 /* FXNewsDetailProtocols.swift */,
+				C114226D27384FE900DF0F50 /* FXNewsDetail.storyboard */,
+			);
+			path = FXDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C114226E27384FE900DF0F50 /* FXNewsDetail.storyboard in Resources */,
 				C11421A82738170E00DF0F50 /* LaunchScreen.storyboard in Resources */,
 				C11421F427381D2A00DF0F50 /* FXList.storyboard in Resources */,
 				C11421A52738170E00DF0F50 /* Assets.xcassets in Resources */,
@@ -345,15 +372,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C11421E927381A6100DF0F50 /* FXListProtocols.swift in Sources */,
+				C11422572738489D00DF0F50 /* FXNewsDetailInteractor.swift in Sources */,
 				C11421DA273819A000DF0F50 /* FXListRouter.swift in Sources */,
 				C11421A02738170C00DF0F50 /* FXListViewController.swift in Sources */,
+				C11422642738490500DF0F50 /* FXNewsDetailRouter.swift in Sources */,
 				C114223E27383A5F00DF0F50 /* FXCategoryTableViewCell.swift in Sources */,
 				C11421E4273819BE00DF0F50 /* FXListPresenter.swift in Sources */,
 				C114219C2738170C00DF0F50 /* AppDelegate.swift in Sources */,
 				C114222F273829D300DF0F50 /* Constants.swift in Sources */,
 				C114223527382D5700DF0F50 /* FX.swift in Sources */,
+				C11422522738485F00DF0F50 /* FXNewsDetailViewController.swift in Sources */,
 				C114219E2738170C00DF0F50 /* SceneDelegate.swift in Sources */,
 				C1142227273829BC00DF0F50 /* NetworkError.swift in Sources */,
+				C11422692738493200DF0F50 /* FXNewsDetailProtocols.swift in Sources */,
+				C114225C273848CE00DF0F50 /* FXNewsDetailPresenter.swift in Sources */,
 				C1142217273825AC00DF0F50 /* ServiceHandler.swift in Sources */,
 				C11421DF273819AF00DF0F50 /* FXListInteractor.swift in Sources */,
 				C114224627383B3500DF0F50 /* FXCategoryCollectionViewCell.swift in Sources */,

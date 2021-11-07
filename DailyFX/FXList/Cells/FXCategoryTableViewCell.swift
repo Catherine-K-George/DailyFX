@@ -7,10 +7,16 @@
 
 import UIKit
 
+protocol FXCategoryTableViewCellDelegate: AnyObject {
+    func didSelect(_ news: FXNews)
+}
+
 class FXCategoryTableViewCell: UITableViewCell {
 
     static let identifier = "FXCategoryTableViewCell"
     var fxNews: [FXNews] = []
+    weak var delegate: FXCategoryTableViewCellDelegate?
+
     @IBOutlet weak var fxCategoryCollectionView: UICollectionView! {
         didSet {
             fxCategoryCollectionView.delegate = self
@@ -26,7 +32,9 @@ class FXCategoryTableViewCell: UITableViewCell {
 
 // MARK: CollectionViewDelegate
 extension FXCategoryTableViewCell: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelect(fxNews[indexPath.row])
+    }
 }
 
 // MARK: CollectionViewDataSource

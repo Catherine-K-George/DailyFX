@@ -7,12 +7,12 @@
 
 import Foundation
 
-
 protocol FXListViewToPresenterProtocol {
     func fetchList()
     func numberOfSections() -> Int
     func numberOfRows(Insection section: Int) -> Int
     func item(for indexPath: IndexPath) -> [FXNews]
+    func navigate(toDetail news: FXNews)
 }
 
 protocol FXListPresenterToViewProtocol: AnyObject {
@@ -29,4 +29,6 @@ protocol FXListInteractorToPresenterProtocol: class {
     func didFail(_ message: String)
 }
 
-protocol FXListPresenterToRouterProtocol { }
+protocol FXListPresenterToRouterProtocol {
+    func navigateToFXDetail(_ news: FXNews)
+}

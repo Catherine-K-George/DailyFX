@@ -44,8 +44,16 @@ extension FXListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FXCategoryTableViewCell.identifier, for: indexPath) as! FXCategoryTableViewCell
+        cell.delegate = self
         cell.fxNews = presenter?.item(for: indexPath) ?? []
         return cell
     }
 
+}
+
+// MARK: FXCategoryTableViewCellDelegate
+extension FXListViewController: FXCategoryTableViewCellDelegate {
+    func didSelect(_ news: FXNews) {
+        presenter?.navigate(toDetail: news)
+    }
 }

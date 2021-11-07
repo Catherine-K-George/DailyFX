@@ -16,6 +16,10 @@ class FXListPresenter: NSObject {
 
 // MARK: - FXListViewToPresenter
 extension FXListPresenter: FXListViewToPresenterProtocol {
+    func navigate(toDetail news: FXNews) {
+        router?.navigateToFXDetail(news)
+    }
+    
     func fetchList() {
         interactor?.fetchList()
     }
