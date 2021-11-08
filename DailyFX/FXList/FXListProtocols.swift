@@ -11,8 +11,10 @@ protocol FXListViewToPresenterProtocol {
     func fetchList()
     func numberOfSections() -> Int
     func numberOfRows(Insection section: Int) -> Int
+    func title(for section: Int) -> String 
     func item(for indexPath: IndexPath) -> [FXNews]
     func navigate(toDetail news: FXNews)
+    func showAllFXNews(at section: Int)
 }
 
 protocol FXListPresenterToViewProtocol: AnyObject {

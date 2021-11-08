@@ -31,6 +31,8 @@
 		C11422642738490500DF0F50 /* FXNewsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11422632738490500DF0F50 /* FXNewsDetailRouter.swift */; };
 		C11422692738493200DF0F50 /* FXNewsDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11422682738493200DF0F50 /* FXNewsDetailProtocols.swift */; };
 		C114226E27384FE900DF0F50 /* FXNewsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C114226D27384FE900DF0F50 /* FXNewsDetail.storyboard */; };
+		C11422732738DD4700DF0F50 /* FXCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11422722738DD4700DF0F50 /* FXCategoryHeaderView.swift */; };
+		C11422782738DDB100DF0F50 /* FXCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11422772738DDB100DF0F50 /* FXCategoryHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		C11422632738490500DF0F50 /* FXNewsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXNewsDetailRouter.swift; sourceTree = "<group>"; };
 		C11422682738493200DF0F50 /* FXNewsDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXNewsDetailProtocols.swift; sourceTree = "<group>"; };
 		C114226D27384FE900DF0F50 /* FXNewsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FXNewsDetail.storyboard; sourceTree = "<group>"; };
+		C11422722738DD4700DF0F50 /* FXCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXCategoryHeaderView.swift; sourceTree = "<group>"; };
+		C11422772738DDB100DF0F50 /* FXCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FXCategoryHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,8 @@
 			children = (
 				C114223D27383A5F00DF0F50 /* FXCategoryTableViewCell.swift */,
 				C114224527383B3500DF0F50 /* FXCategoryCollectionViewCell.swift */,
+				C11422722738DD4700DF0F50 /* FXCategoryHeaderView.swift */,
+				C11422772738DDB100DF0F50 /* FXCategoryHeaderView.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11422782738DDB100DF0F50 /* FXCategoryHeaderView.xib in Resources */,
 				C114226E27384FE900DF0F50 /* FXNewsDetail.storyboard in Resources */,
 				C11421A82738170E00DF0F50 /* LaunchScreen.storyboard in Resources */,
 				C11421F427381D2A00DF0F50 /* FXList.storyboard in Resources */,
@@ -379,6 +386,7 @@
 				C114223E27383A5F00DF0F50 /* FXCategoryTableViewCell.swift in Sources */,
 				C11421E4273819BE00DF0F50 /* FXListPresenter.swift in Sources */,
 				C114219C2738170C00DF0F50 /* AppDelegate.swift in Sources */,
+				C11422732738DD4700DF0F50 /* FXCategoryHeaderView.swift in Sources */,
 				C114222F273829D300DF0F50 /* Constants.swift in Sources */,
 				C114223527382D5700DF0F50 /* FX.swift in Sources */,
 				C11422522738485F00DF0F50 /* FXNewsDetailViewController.swift in Sources */,

@@ -14,7 +14,12 @@ class FXListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerCells()
         presenter?.fetchList()
+    }
+    
+    private func registerCells() {
+        fxCategoryTableView.register(UINib(nibName: FXCategoryHeaderView.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: FXCategoryHeaderView.identifier)
     }
 }
 
@@ -31,13 +36,29 @@ extension FXListViewController: FXListPresenterToViewProtocol {
 
 // MARK: TableViewDelegate
 extension FXListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        80
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         110
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: FXCategoryHeaderView.identifier) as! FXCategoryHeaderView
+        header.delegate = self
+        header.section = section
+        header.title = presenter?.title(for: section) ?? ""
+        return header
     }
 }
 
 // MARK: TableViewDataSource
 extension FXListViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        presenter?.numberOfSections() ?? 0
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         presenter?.numberOfRows(Insection: section) ?? 0
     }
@@ -55,5 +76,12 @@ extension FXListViewController: UITableViewDataSource {
 extension FXListViewController: FXCategoryTableViewCellDelegate {
     func didSelect(_ news: FXNews) {
         presenter?.navigate(toDetail: news)
+    }
+}
+
+// MARK: FXCategoryHeaderViewDelegate
+extension FXListViewController: FXCategoryHeaderViewDelegate {
+    func showAllFXNews(at section: Int) {
+        presenter?.showAllFXNews(at: section)
     }
 }
