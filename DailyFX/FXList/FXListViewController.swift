@@ -14,8 +14,13 @@ class FXListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigation()
         registerCells()
         presenter?.fetchList()
+    }
+    
+    private func setNavigation() {
+        title = "Daily FX News"
     }
     
     private func registerCells() {
@@ -38,10 +43,10 @@ extension FXListViewController: FXListPresenterToViewProtocol {
 extension FXListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        80
+        60
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        110
+        150
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

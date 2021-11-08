@@ -13,7 +13,11 @@ class FXNewsDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Detail")
+        setNavigation()
+    }
+    
+    private func setNavigation() {
+        title = presenter?.setTitle()
     }
 }
 

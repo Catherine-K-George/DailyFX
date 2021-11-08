@@ -15,7 +15,11 @@ class FXNewsDetailPresenter: NSObject {
 }
 
 // MARK: - FXNewsDetailViewToPresenter
-extension FXNewsDetailPresenter: FXNewsDetailViewToPresenterProtocol { }
+extension FXNewsDetailPresenter: FXNewsDetailViewToPresenterProtocol {
+    func setTitle() -> String {
+        fxNews?.title ?? ""
+    }
+}
 
 // MARK: - FXNewsDetailInteractorToPresenter
 extension FXNewsDetailPresenter: FXNewsDetailInteractorToPresenterProtocol { }

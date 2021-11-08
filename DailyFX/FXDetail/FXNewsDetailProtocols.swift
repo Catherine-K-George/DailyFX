@@ -7,7 +7,9 @@
 
 import Foundation
 
-protocol FXNewsDetailViewToPresenterProtocol { }
+protocol FXNewsDetailViewToPresenterProtocol {
+    func setTitle() -> String
+}
 
 protocol FXNewsDetailPresenterToViewProtocol: AnyObject { }
 
