@@ -36,6 +36,7 @@
 		C114233D2739914300DF0F50 /* FXListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114233C2739914300DF0F50 /* FXListRouterTests.swift */; };
 		C11423422739927700DF0F50 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423412739927600DF0F50 /* UIApplication+Extensions.swift */; };
 		C11423462739A14100DF0F50 /* FXListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423452739A14100DF0F50 /* FXListPresenterTests.swift */; };
+		C16999DB273A41BC00EB4F9E /* FXListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16999DA273A41BC00EB4F9E /* FXListInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		C114233C2739914300DF0F50 /* FXListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListRouterTests.swift; sourceTree = "<group>"; };
 		C11423412739927600DF0F50 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		C11423452739A14100DF0F50 /* FXListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListPresenterTests.swift; sourceTree = "<group>"; };
+		C16999DA273A41BC00EB4F9E /* FXListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,9 +224,8 @@
 			children = (
 				C114232C273942C400DF0F50 /* Info.plist */,
 				C11423012739117C00DF0F50 /* DailyFXTests.swift */,
-				C114233827397F5400DF0F50 /* FXEntityTests.swift */,
-				C114233C2739914300DF0F50 /* FXListRouterTests.swift */,
-				C11423452739A14100DF0F50 /* FXListPresenterTests.swift */,
+				C16999D5273A3DCE00EB4F9E /* FXEntityTests */,
+				C16999D0273A3DC300EB4F9E /* FXListTests */,
 			);
 			path = DailyFXTests;
 			sourceTree = "<group>";
@@ -235,6 +236,24 @@
 				C11423412739927600DF0F50 /* UIApplication+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C16999D0273A3DC300EB4F9E /* FXListTests */ = {
+			isa = PBXGroup;
+			children = (
+				C114233C2739914300DF0F50 /* FXListRouterTests.swift */,
+				C11423452739A14100DF0F50 /* FXListPresenterTests.swift */,
+				C16999DA273A41BC00EB4F9E /* FXListInteractorTests.swift */,
+			);
+			path = FXListTests;
+			sourceTree = "<group>";
+		};
+		C16999D5273A3DCE00EB4F9E /* FXEntityTests */ = {
+			isa = PBXGroup;
+			children = (
+				C114233827397F5400DF0F50 /* FXEntityTests.swift */,
+			);
+			path = FXEntityTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C114233927397F5400DF0F50 /* FXEntityTests.swift in Sources */,
+				C16999DB273A41BC00EB4F9E /* FXListInteractorTests.swift in Sources */,
 				C11423022739117C00DF0F50 /* DailyFXTests.swift in Sources */,
 				C11423462739A14100DF0F50 /* FXListPresenterTests.swift in Sources */,
 				C114233D2739914300DF0F50 /* FXListRouterTests.swift in Sources */,

@@ -44,5 +44,4 @@ class FXListPresenterTests: XCTestCase {
         let item = fxListPresenter.item(for: indexPath)
         XCTAssertNotNil(item)
     }
-    
 }
