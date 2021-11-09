@@ -35,7 +35,7 @@ class FXListPresenterTests: XCTestCase {
         let section = 0
         fxListPresenter.didFetch(fx: mockFX)
         let title = fxListPresenter.title(for: section)
-        XCTAssertEqual(title, "title")
+        XCTAssertEqual(title, "Breaking News")
     }
 
     func testGetItem() {

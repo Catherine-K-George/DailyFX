@@ -34,7 +34,6 @@
 		C11423022739117C00DF0F50 /* DailyFXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423012739117C00DF0F50 /* DailyFXTests.swift */; };
 		C114233927397F5400DF0F50 /* FXEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114233827397F5400DF0F50 /* FXEntityTests.swift */; };
 		C114233D2739914300DF0F50 /* FXListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114233C2739914300DF0F50 /* FXListRouterTests.swift */; };
-		C11423422739927700DF0F50 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423412739927600DF0F50 /* UIApplication+Extensions.swift */; };
 		C11423462739A14100DF0F50 /* FXListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423452739A14100DF0F50 /* FXListPresenterTests.swift */; };
 		C16999DB273A41BC00EB4F9E /* FXListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16999DA273A41BC00EB4F9E /* FXListInteractorTests.swift */; };
 /* End PBXBuildFile section */
@@ -81,7 +80,6 @@
 		C114232C273942C400DF0F50 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C114233827397F5400DF0F50 /* FXEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXEntityTests.swift; sourceTree = "<group>"; };
 		C114233C2739914300DF0F50 /* FXListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListRouterTests.swift; sourceTree = "<group>"; };
-		C11423412739927600DF0F50 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		C11423452739A14100DF0F50 /* FXListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListPresenterTests.swift; sourceTree = "<group>"; };
 		C16999DA273A41BC00EB4F9E /* FXListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,7 +178,6 @@
 		C11422252738299700DF0F50 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				C11423402739926400DF0F50 /* Extensions */,
 				C1142226273829BC00DF0F50 /* NetworkError.swift */,
 				C114222E273829D300DF0F50 /* Constants.swift */,
 			);
@@ -228,14 +225,6 @@
 				C16999D0273A3DC300EB4F9E /* FXListTests */,
 			);
 			path = DailyFXTests;
-			sourceTree = "<group>";
-		};
-		C11423402739926400DF0F50 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C11423412739927600DF0F50 /* UIApplication+Extensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C16999D0273A3DC300EB4F9E /* FXListTests */ = {
@@ -368,7 +357,6 @@
 				C114219C2738170C00DF0F50 /* AppDelegate.swift in Sources */,
 				C11422732738DD4700DF0F50 /* FXCategoryHeaderView.swift in Sources */,
 				C114222F273829D300DF0F50 /* Constants.swift in Sources */,
-				C11423422739927700DF0F50 /* UIApplication+Extensions.swift in Sources */,
 				C114223527382D5700DF0F50 /* FX.swift in Sources */,
 				C11422522738485F00DF0F50 /* FXNewsDetailViewController.swift in Sources */,
 				C114219E2738170C00DF0F50 /* SceneDelegate.swift in Sources */,
