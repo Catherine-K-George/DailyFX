@@ -12,8 +12,6 @@
 		C11421A02738170C00DF0F50 /* FXListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114219F2738170C00DF0F50 /* FXListViewController.swift */; };
 		C11421A52738170E00DF0F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11421A42738170E00DF0F50 /* Assets.xcassets */; };
 		C11421A82738170E00DF0F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11421A62738170E00DF0F50 /* LaunchScreen.storyboard */; };
-		C11421B32738170F00DF0F50 /* DailyFXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421B22738170F00DF0F50 /* DailyFXTests.swift */; };
-		C11421BE2738170F00DF0F50 /* DailyFXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421BD2738170F00DF0F50 /* DailyFXUITests.swift */; };
 		C11421DA273819A000DF0F50 /* FXListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421D9273819A000DF0F50 /* FXListRouter.swift */; };
 		C11421DF273819AF00DF0F50 /* FXListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421DE273819AF00DF0F50 /* FXListInteractor.swift */; };
 		C11421E4273819BE00DF0F50 /* FXListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11421E3273819BE00DF0F50 /* FXListPresenter.swift */; };
@@ -33,17 +31,15 @@
 		C114226E27384FE900DF0F50 /* FXNewsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C114226D27384FE900DF0F50 /* FXNewsDetail.storyboard */; };
 		C11422732738DD4700DF0F50 /* FXCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11422722738DD4700DF0F50 /* FXCategoryHeaderView.swift */; };
 		C11422782738DDB100DF0F50 /* FXCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11422772738DDB100DF0F50 /* FXCategoryHeaderView.xib */; };
+		C11423022739117C00DF0F50 /* DailyFXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423012739117C00DF0F50 /* DailyFXTests.swift */; };
+		C114233927397F5400DF0F50 /* FXEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114233827397F5400DF0F50 /* FXEntityTests.swift */; };
+		C114233D2739914300DF0F50 /* FXListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114233C2739914300DF0F50 /* FXListRouterTests.swift */; };
+		C11423422739927700DF0F50 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423412739927600DF0F50 /* UIApplication+Extensions.swift */; };
+		C11423462739A14100DF0F50 /* FXListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423452739A14100DF0F50 /* FXListPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C11421AF2738170F00DF0F50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C11421902738170C00DF0F50 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C11421972738170C00DF0F50;
-			remoteInfo = DailyFX;
-		};
-		C11421BA2738170F00DF0F50 /* PBXContainerItemProxy */ = {
+		C11423042739117C00DF0F50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C11421902738170C00DF0F50 /* Project object */;
 			proxyType = 1;
@@ -60,12 +56,6 @@
 		C11421A42738170E00DF0F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C11421A72738170E00DF0F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C11421A92738170E00DF0F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C11421AE2738170F00DF0F50 /* DailyFXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C11421B22738170F00DF0F50 /* DailyFXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXTests.swift; sourceTree = "<group>"; };
-		C11421B42738170F00DF0F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C11421B92738170F00DF0F50 /* DailyFXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C11421BD2738170F00DF0F50 /* DailyFXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXUITests.swift; sourceTree = "<group>"; };
-		C11421BF2738170F00DF0F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C11421D9273819A000DF0F50 /* FXListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListRouter.swift; sourceTree = "<group>"; };
 		C11421DE273819AF00DF0F50 /* FXListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListInteractor.swift; sourceTree = "<group>"; };
 		C11421E3273819BE00DF0F50 /* FXListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListPresenter.swift; sourceTree = "<group>"; };
@@ -85,6 +75,13 @@
 		C114226D27384FE900DF0F50 /* FXNewsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FXNewsDetail.storyboard; sourceTree = "<group>"; };
 		C11422722738DD4700DF0F50 /* FXCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXCategoryHeaderView.swift; sourceTree = "<group>"; };
 		C11422772738DDB100DF0F50 /* FXCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FXCategoryHeaderView.xib; sourceTree = "<group>"; };
+		C11422FF2739117C00DF0F50 /* DailyFXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11423012739117C00DF0F50 /* DailyFXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXTests.swift; sourceTree = "<group>"; };
+		C114232C273942C400DF0F50 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C114233827397F5400DF0F50 /* FXEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXEntityTests.swift; sourceTree = "<group>"; };
+		C114233C2739914300DF0F50 /* FXListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListRouterTests.swift; sourceTree = "<group>"; };
+		C11423412739927600DF0F50 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		C11423452739A14100DF0F50 /* FXListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,14 +92,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C11421AB2738170F00DF0F50 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C11421B62738170F00DF0F50 /* Frameworks */ = {
+		C11422FC2739117C00DF0F50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -116,8 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C114219A2738170C00DF0F50 /* DailyFX */,
-				C11421B12738170F00DF0F50 /* DailyFXTests */,
-				C11421BC2738170F00DF0F50 /* DailyFXUITests */,
+				C11423002739117C00DF0F50 /* DailyFXTests */,
 				C11421992738170C00DF0F50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,8 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				C11421982738170C00DF0F50 /* DailyFX.app */,
-				C11421AE2738170F00DF0F50 /* DailyFXTests.xctest */,
-				C11421B92738170F00DF0F50 /* DailyFXUITests.xctest */,
+				C11422FF2739117C00DF0F50 /* DailyFXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,24 +133,6 @@
 				C11421A92738170E00DF0F50 /* Info.plist */,
 			);
 			path = DailyFX;
-			sourceTree = "<group>";
-		};
-		C11421B12738170F00DF0F50 /* DailyFXTests */ = {
-			isa = PBXGroup;
-			children = (
-				C11421B22738170F00DF0F50 /* DailyFXTests.swift */,
-				C11421B42738170F00DF0F50 /* Info.plist */,
-			);
-			path = DailyFXTests;
-			sourceTree = "<group>";
-		};
-		C11421BC2738170F00DF0F50 /* DailyFXUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C11421BD2738170F00DF0F50 /* DailyFXUITests.swift */,
-				C11421BF2738170F00DF0F50 /* Info.plist */,
-			);
-			path = DailyFXUITests;
 			sourceTree = "<group>";
 		};
 		C11421D52738197000DF0F50 /* FXList */ = {
@@ -208,6 +178,7 @@
 		C11422252738299700DF0F50 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				C11423402739926400DF0F50 /* Extensions */,
 				C1142226273829BC00DF0F50 /* NetworkError.swift */,
 				C114222E273829D300DF0F50 /* Constants.swift */,
 			);
@@ -246,6 +217,26 @@
 			path = FXDetail;
 			sourceTree = "<group>";
 		};
+		C11423002739117C00DF0F50 /* DailyFXTests */ = {
+			isa = PBXGroup;
+			children = (
+				C114232C273942C400DF0F50 /* Info.plist */,
+				C11423012739117C00DF0F50 /* DailyFXTests.swift */,
+				C114233827397F5400DF0F50 /* FXEntityTests.swift */,
+				C114233C2739914300DF0F50 /* FXListRouterTests.swift */,
+				C11423452739A14100DF0F50 /* FXListPresenterTests.swift */,
+			);
+			path = DailyFXTests;
+			sourceTree = "<group>";
+		};
+		C11423402739926400DF0F50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C11423412739927600DF0F50 /* UIApplication+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,41 +257,23 @@
 			productReference = C11421982738170C00DF0F50 /* DailyFX.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C11421AD2738170F00DF0F50 /* DailyFXTests */ = {
+		C11422FE2739117C00DF0F50 /* DailyFXTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C11421C52738170F00DF0F50 /* Build configuration list for PBXNativeTarget "DailyFXTests" */;
+			buildConfigurationList = C11423062739117C00DF0F50 /* Build configuration list for PBXNativeTarget "DailyFXTests" */;
 			buildPhases = (
-				C11421AA2738170F00DF0F50 /* Sources */,
-				C11421AB2738170F00DF0F50 /* Frameworks */,
-				C11421AC2738170F00DF0F50 /* Resources */,
+				C11422FB2739117C00DF0F50 /* Sources */,
+				C11422FC2739117C00DF0F50 /* Frameworks */,
+				C11422FD2739117C00DF0F50 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C11421B02738170F00DF0F50 /* PBXTargetDependency */,
+				C11423052739117C00DF0F50 /* PBXTargetDependency */,
 			);
 			name = DailyFXTests;
 			productName = DailyFXTests;
-			productReference = C11421AE2738170F00DF0F50 /* DailyFXTests.xctest */;
+			productReference = C11422FF2739117C00DF0F50 /* DailyFXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C11421B82738170F00DF0F50 /* DailyFXUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C11421C82738170F00DF0F50 /* Build configuration list for PBXNativeTarget "DailyFXUITests" */;
-			buildPhases = (
-				C11421B52738170F00DF0F50 /* Sources */,
-				C11421B62738170F00DF0F50 /* Frameworks */,
-				C11421B72738170F00DF0F50 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C11421BB2738170F00DF0F50 /* PBXTargetDependency */,
-			);
-			name = DailyFXUITests;
-			productName = DailyFXUITests;
-			productReference = C11421B92738170F00DF0F50 /* DailyFXUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -314,11 +287,7 @@
 					C11421972738170C00DF0F50 = {
 						CreatedOnToolsVersion = 12.3;
 					};
-					C11421AD2738170F00DF0F50 = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = C11421972738170C00DF0F50;
-					};
-					C11421B82738170F00DF0F50 = {
+					C11422FE2739117C00DF0F50 = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = C11421972738170C00DF0F50;
 					};
@@ -338,8 +307,7 @@
 			projectRoot = "";
 			targets = (
 				C11421972738170C00DF0F50 /* DailyFX */,
-				C11421AD2738170F00DF0F50 /* DailyFXTests */,
-				C11421B82738170F00DF0F50 /* DailyFXUITests */,
+				C11422FE2739117C00DF0F50 /* DailyFXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,14 +325,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C11421AC2738170F00DF0F50 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C11421B72738170F00DF0F50 /* Resources */ = {
+		C11422FD2739117C00DF0F50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -388,6 +349,7 @@
 				C114219C2738170C00DF0F50 /* AppDelegate.swift in Sources */,
 				C11422732738DD4700DF0F50 /* FXCategoryHeaderView.swift in Sources */,
 				C114222F273829D300DF0F50 /* Constants.swift in Sources */,
+				C11423422739927700DF0F50 /* UIApplication+Extensions.swift in Sources */,
 				C114223527382D5700DF0F50 /* FX.swift in Sources */,
 				C11422522738485F00DF0F50 /* FXNewsDetailViewController.swift in Sources */,
 				C114219E2738170C00DF0F50 /* SceneDelegate.swift in Sources */,
@@ -400,34 +362,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C11421AA2738170F00DF0F50 /* Sources */ = {
+		C11422FB2739117C00DF0F50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C11421B32738170F00DF0F50 /* DailyFXTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C11421B52738170F00DF0F50 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C11421BE2738170F00DF0F50 /* DailyFXUITests.swift in Sources */,
+				C114233927397F5400DF0F50 /* FXEntityTests.swift in Sources */,
+				C11423022739117C00DF0F50 /* DailyFXTests.swift in Sources */,
+				C11423462739A14100DF0F50 /* FXListPresenterTests.swift in Sources */,
+				C114233D2739914300DF0F50 /* FXListRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C11421B02738170F00DF0F50 /* PBXTargetDependency */ = {
+		C11423052739117C00DF0F50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C11421972738170C00DF0F50 /* DailyFX */;
-			targetProxy = C11421AF2738170F00DF0F50 /* PBXContainerItemProxy */;
-		};
-		C11421BB2738170F00DF0F50 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C11421972738170C00DF0F50 /* DailyFX */;
-			targetProxy = C11421BA2738170F00DF0F50 /* PBXContainerItemProxy */;
+			targetProxy = C11423042739117C00DF0F50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -597,14 +549,12 @@
 			};
 			name = Release;
 		};
-		C11421C62738170F00DF0F50 /* Debug */ = {
+		C11423072739117C00DF0F50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DailyFXTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,14 +568,12 @@
 			};
 			name = Debug;
 		};
-		C11421C72738170F00DF0F50 /* Release */ = {
+		C11423082739117C00DF0F50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DailyFXTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,44 +584,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyFX.app/DailyFX";
-			};
-			name = Release;
-		};
-		C11421C92738170F00DF0F50 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DailyFXUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = catherine.DailyFXUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyFX;
-			};
-			name = Debug;
-		};
-		C11421CA2738170F00DF0F50 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DailyFXUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = catherine.DailyFXUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyFX;
 			};
 			name = Release;
 		};
@@ -698,20 +608,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C11421C52738170F00DF0F50 /* Build configuration list for PBXNativeTarget "DailyFXTests" */ = {
+		C11423062739117C00DF0F50 /* Build configuration list for PBXNativeTarget "DailyFXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C11421C62738170F00DF0F50 /* Debug */,
-				C11421C72738170F00DF0F50 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C11421C82738170F00DF0F50 /* Build configuration list for PBXNativeTarget "DailyFXUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C11421C92738170F00DF0F50 /* Debug */,
-				C11421CA2738170F00DF0F50 /* Release */,
+				C11423072739117C00DF0F50 /* Debug */,
+				C11423082739117C00DF0F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

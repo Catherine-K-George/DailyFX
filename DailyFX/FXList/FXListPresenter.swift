@@ -12,7 +12,7 @@ class FXListPresenter: NSObject {
     var interactor: FXListPresenterToInteractorProtocol?
     var router: FXListPresenterToRouterProtocol?
     private var fxCategoryList: FX?
-    private var modifiedFXCategories: [[String:[FXNews]]] = [[String:[FXNews]]]()
+    private(set) var modifiedFXCategories: [[String:[FXNews]]] = [[String:[FXNews]]]()
 }
 
 // MARK: - FXListViewToPresenter
