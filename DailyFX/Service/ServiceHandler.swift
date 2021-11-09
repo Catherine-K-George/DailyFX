@@ -5,9 +5,11 @@
 //  Created by Catherine on 07/11/21.
 //
 
-import Foundation
+import UIKit
 
 typealias ResponseHandler<T:Decodable> = (Result<T, Error>) -> Void
+typealias ImageHandler = (Result<UIImage, Error>) -> Void
+
 class ServiceHandler {
     
     class func makeRequest<T: Decodable>(responseType:T.Type, completion: @escaping ResponseHandler<T>) {
@@ -34,6 +36,27 @@ class ServiceHandler {
                 completion(.failure(error))
             }
             
+        }
+        task.resume()
+    }
+    
+    class func loadImage(from url: URL, completion: @escaping ImageHandler) {
+        let session = URLSession.shared
+
+        let task = session.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            guard let data = data else {
+                completion(.failure(NetworkError.invalidData))
+                return
+            }
+            if let image = UIImage(data: data) {
+                completion(.success(image))
+            } else {
+                completion(.failure(NetworkError.invalidImage))
+            }
         }
         task.resume()
     }

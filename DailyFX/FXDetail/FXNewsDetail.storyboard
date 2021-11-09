@@ -16,10 +16,49 @@
                     <view key="view" contentMode="scaleToFill" id="Q2Q-H7-nJi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="K5o-6p-tCQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="332"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k8p-N9-ILi">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amj-kW-MBi">
+                                        <rect key="frame" x="0.0" y="220" width="414" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw9-Rf-pSO">
+                                        <rect key="frame" x="0.0" y="261.5" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abE-hY-hWW">
+                                        <rect key="frame" x="0.0" y="302" width="414" height="30"/>
+                                        <state key="normal" title="Show more.."/>
+                                        <connections>
+                                            <action selector="shareMoreTapped:" destination="gyn-Rv-Svd" eventType="touchUpInside" id="36l-HY-edj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1rK-3r-w9T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K5o-6p-tCQ" firstAttribute="trailing" secondItem="1rK-3r-w9T" secondAttribute="trailing" id="7es-4P-qhp"/>
+                            <constraint firstItem="K5o-6p-tCQ" firstAttribute="leading" secondItem="1rK-3r-w9T" secondAttribute="leading" id="FHU-Oz-OHk"/>
+                            <constraint firstItem="K5o-6p-tCQ" firstAttribute="top" secondItem="1rK-3r-w9T" secondAttribute="top" id="VZP-6L-jeK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kpv-40-Ect"/>
+                    <connections>
+                        <outlet property="bannerImageView" destination="k8p-N9-ILi" id="Bxv-pO-u0K"/>
+                        <outlet property="descriptionLabel" destination="Qw9-Rf-pSO" id="j25-Id-5dT"/>
+                        <outlet property="titleLabel" destination="Amj-kW-MBi" id="hkc-Fm-wvB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbb-5y-rRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

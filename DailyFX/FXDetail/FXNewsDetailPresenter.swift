@@ -5,7 +5,7 @@
 //  Created by Catherine on 07/11/21.
 //
 
-import Foundation
+import UIKit
 
 class FXNewsDetailPresenter: NSObject {
     weak var view: FXNewsDetailPresenterToViewProtocol?
@@ -16,10 +16,28 @@ class FXNewsDetailPresenter: NSObject {
 
 // MARK: - FXNewsDetailViewToPresenter
 extension FXNewsDetailPresenter: FXNewsDetailViewToPresenterProtocol {
+    func setNewsDetails() -> FXNews? {
+        return fxNews
+    }
+    
+    func setBannerImage() {
+        guard let urlString = fxNews?.headlineImageUrl else { return }
+        guard let url = URL(string: urlString) else { return  }
+        interactor?.loadImage(from: url)
+    }
+    
     func setTitle() -> String {
         fxNews?.title ?? ""
     }
 }
 
 // MARK: - FXNewsDetailInteractorToPresenter
-extension FXNewsDetailPresenter: FXNewsDetailInteractorToPresenterProtocol { }
+extension FXNewsDetailPresenter: FXNewsDetailInteractorToPresenterProtocol {
+    func didLoad(_ image: UIImage) {
+        view?.didLoad(image)
+    }
+    
+    func didFail(_ error: Error) {
+        view?.didFail(error)
+    }
+}

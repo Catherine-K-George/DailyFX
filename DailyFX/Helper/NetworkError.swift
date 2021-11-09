@@ -11,4 +11,5 @@ enum NetworkError: Error, LocalizedError, Equatable {
     case invalidURL
     case invalidData
     case parseError
+    case invalidImage
 }

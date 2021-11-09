@@ -25,4 +25,5 @@ struct FXNews: Decodable {
     let title: String?
     let url: String?
     let description: String?
+    let headlineImageUrl: String?
 }
