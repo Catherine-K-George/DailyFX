@@ -11,7 +11,7 @@ import XCTest
 class FXEntityTests: XCTestCase {
 
     func testFXEntitySetGet() {
-        let news = FXNews(title: "title", url: "url", description: "description")
+        let news = FXNews(title: "title", url: "url", description: "description", headlineImageUrl: "https://a.c-dn.net/b/1ycfch/headline_NYSE_12.JPG")
         let region = FXRegionNews(eu: [news], asia: [news], us: [news])
         let fx = FX(breakingNews: [news], topNews: [news], dailyBriefings: region, technicalAnalysis:[ news], specialReport: [news])
         XCTAssertEqual(fx.breakingNews?.first?.title, "title")

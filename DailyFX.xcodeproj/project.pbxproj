@@ -31,11 +31,11 @@
 		C114226E27384FE900DF0F50 /* FXNewsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C114226D27384FE900DF0F50 /* FXNewsDetail.storyboard */; };
 		C11422732738DD4700DF0F50 /* FXCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11422722738DD4700DF0F50 /* FXCategoryHeaderView.swift */; };
 		C11422782738DDB100DF0F50 /* FXCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11422772738DDB100DF0F50 /* FXCategoryHeaderView.xib */; };
-		C11423022739117C00DF0F50 /* DailyFXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423012739117C00DF0F50 /* DailyFXTests.swift */; };
 		C114233927397F5400DF0F50 /* FXEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114233827397F5400DF0F50 /* FXEntityTests.swift */; };
 		C114233D2739914300DF0F50 /* FXListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114233C2739914300DF0F50 /* FXListRouterTests.swift */; };
 		C11423462739A14100DF0F50 /* FXListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11423452739A14100DF0F50 /* FXListPresenterTests.swift */; };
 		C16999DB273A41BC00EB4F9E /* FXListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16999DA273A41BC00EB4F9E /* FXListInteractorTests.swift */; };
+		C16999E7273A89C200EB4F9E /* FXDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16999E6273A89C200EB4F9E /* FXDetailPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,12 +76,12 @@
 		C11422722738DD4700DF0F50 /* FXCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXCategoryHeaderView.swift; sourceTree = "<group>"; };
 		C11422772738DDB100DF0F50 /* FXCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FXCategoryHeaderView.xib; sourceTree = "<group>"; };
 		C11422FF2739117C00DF0F50 /* DailyFXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C11423012739117C00DF0F50 /* DailyFXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFXTests.swift; sourceTree = "<group>"; };
 		C114232C273942C400DF0F50 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C114233827397F5400DF0F50 /* FXEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXEntityTests.swift; sourceTree = "<group>"; };
 		C114233C2739914300DF0F50 /* FXListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListRouterTests.swift; sourceTree = "<group>"; };
 		C11423452739A14100DF0F50 /* FXListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListPresenterTests.swift; sourceTree = "<group>"; };
 		C16999DA273A41BC00EB4F9E /* FXListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXListInteractorTests.swift; sourceTree = "<group>"; };
+		C16999E6273A89C200EB4F9E /* FXDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXDetailPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,9 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				C114232C273942C400DF0F50 /* Info.plist */,
-				C11423012739117C00DF0F50 /* DailyFXTests.swift */,
 				C16999D5273A3DCE00EB4F9E /* FXEntityTests */,
 				C16999D0273A3DC300EB4F9E /* FXListTests */,
+				C16999E6273A89C200EB4F9E /* FXDetailPresenterTests.swift */,
 			);
 			path = DailyFXTests;
 			sourceTree = "<group>";
@@ -373,9 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C16999E7273A89C200EB4F9E /* FXDetailPresenterTests.swift in Sources */,
 				C114233927397F5400DF0F50 /* FXEntityTests.swift in Sources */,
 				C16999DB273A41BC00EB4F9E /* FXListInteractorTests.swift in Sources */,
-				C11423022739117C00DF0F50 /* DailyFXTests.swift in Sources */,
 				C11423462739A14100DF0F50 /* FXListPresenterTests.swift in Sources */,
 				C114233D2739914300DF0F50 /* FXListRouterTests.swift in Sources */,
 			);

@@ -21,7 +21,7 @@ class FXListRouterTests: XCTestCase {
     }
 
     func testTopVCIsFXDetailWhenPresented() {
-        let news = FXNews(title: "title", url: "url", description: "description")
+        let news = FXNews(title: "title", url: "url", description: "description", headlineImageUrl: "https://a.c-dn.net/b/1ycfch/headline_NYSE_12.JPG")
         fxListRouter.navigateToFXDetail(news)
         XCTAssertTrue(fxListRouter.presentedViewController is FXListViewController)
     }

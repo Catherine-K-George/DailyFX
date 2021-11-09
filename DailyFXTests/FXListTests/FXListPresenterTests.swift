@@ -10,7 +10,7 @@ import XCTest
 
 class FXListPresenterTests: XCTestCase {
     var fxListPresenter: FXListPresenter!
-    let news = FXNews(title: "title", url: "url", description: "description")
+    let news = FXNews(title: "title", url: "url", description: "description", headlineImageUrl: "https://a.c-dn.net/b/1ycfch/headline_NYSE_12.JPG")
     var mockFX: FX {
         return FX(breakingNews: [news], topNews: [news], dailyBriefings: FXRegionNews(eu: [news], asia: [news], us: [news]), technicalAnalysis: [news], specialReport: [news])
     }
